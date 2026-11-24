@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8e9e8">
+  <title>For Adib Mahendra ♡</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+    :root{--cream:#fff9f5;--pink:#f6dfdf;--rose:#d88991;--deep:#794d58;--ink:#513b42;--muted:#987d82;--line:#efd5d5;--white:#fffdfb}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif}
+    button{font:inherit;cursor:pointer}
+    .hidden{display:none!important}
+    .door-screen{min-height:100svh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 20% 20%,#fff 0 8%,transparent 35%),linear-gradient(145deg,#f8e8e7,#f9eee7 55%,#f4dfe3)}
+    .door-card{width:min(540px,100%);text-align:center;padding:38px 28px 34px;border:1px solid #fff8;border-radius:28px;background:#fff9f2c9;box-shadow:0 24px 70px #9d68751a}
+    .eyebrow{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:700}
+    h1,h2,h3{font-family:'Playfair Display',serif;font-weight:500}
+    .door-card h1{font-size:clamp(2.7rem,10vw,4.6rem);line-height:1.02;margin:18px 0 12px;color:var(--deep)}
+    .door-card p{color:var(--muted);line-height:1.8;margin:0 auto 25px;max-width:340px}
+    .door{width:148px;height:190px;margin:25px auto 22px;position:relative;border-radius:75px 75px 12px 12px;background:linear-gradient(90deg,#c98791,#e4aeb2 55%,#ca8993);box-shadow:inset 7px 0 0 #ffffff24, inset -7px 0 0 #8d586122,0 15px 30px #9f647333;transition:transform .5s}
+    .door:before{content:"";position:absolute;inset:13px 13px 12px;border:1px solid #ffeddf99;border-radius:65px 65px 7px 7px}
+    .door:after{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:#f8e4b5;right:22px;top:105px;box-shadow:0 0 0 3px #9b626344}
+    .door.open{transform:perspective(500px) rotateY(-24deg);transform-origin:left}
+    .primary{border:0;border-radius:999px;background:var(--deep);color:white;padding:14px 24px;font-weight:600;box-shadow:0 8px 20px #794d5826;transition:.2s}
+    .primary:hover{transform:translateY(-2px);background:#67414b}
+    .tiny{font-size:.78rem;color:var(--muted);margin-top:16px}
+    header{padding:26px 22px 10px;text-align:center}
+    .topline{display:flex;justify-content:space-between;align-items:center;max-width:1060px;margin:auto;color:var(--muted);font-size:.75rem;letter-spacing:.08em}
+    .brand{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--deep)}
+    nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:22px 12px 10px}
+    nav a{color:var(--muted);text-decoration:none;font-size:.78rem;padding:8px 12px;border:1px solid transparent;border-radius:99px}
+    nav a:hover{border-color:var(--line);background:#fff}
+    .hero{max-width:980px;margin:36px auto 55px;padding:30px 22px;text-align:center}
+    .hero h1{font-size:clamp(3rem,9vw,6rem);line-height:.98;color:var(--deep);margin:15px 0}
+    .hero h1 em{color:var(--rose);font-weight:500}
+    .hero p{max-width:500px;margin:16px auto;color:var(--muted);line-height:1.9}
+    .sparkle{color:var(--rose);font-size:1.2rem}
+    .section{max-width:1000px;margin:0 auto;padding:52px 22px}
+    .section-head{text-align:center;margin-bottom:28px}
+    .section-head h2{font-size:clamp(2rem,5vw,3rem);color:var(--deep);margin:9px 0}
+    .section-head p{color:var(--muted);font-size:.9rem;line-height:1.7}
+    .paper{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:clamp(24px,5vw,48px);box-shadow:0 14px 40px #8e5d6610}
+    .letter{max-width:740px;margin:auto;position:relative}
+    .letter:before{content:"♡";position:absolute;right:26px;top:18px;color:#e8b9bd;font-size:2rem}
+    .letter h3{font-size:2rem;color:var(--deep);margin:0 0 22px}
+    .letter p{font-size:.96rem;line-height:2;color:#715960;white-space:pre-line}
+    .sign{font-family:'Playfair Display',serif;font-style:italic;color:var(--rose);font-size:1.4rem;margin-top:25px}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .photo{background:#f5e4e3;border:8px solid white;box-shadow:0 8px 25px #865c6217;transform:rotate(var(--rot));padding:0;overflow:hidden;min-height:180px;position:relative}
+    .photo:nth-child(2n){--rot:1.5deg}.photo:nth-child(odd){--rot:-1deg}
+    .photo img{width:100%;height:220px;object-fit:cover;display:block}
+    .photo span{display:block;padding:11px 7px 5px;font-family:'Playfair Display',serif;color:var(--deep);font-size:.95rem}
+    .placeholder{height:220px;display:grid;place-items:center;color:#b9878e;text-align:center;padding:16px;font-size:.85rem}
+    .music-card{max-width:600px;margin:auto;display:flex;align-items:center;gap:20px}
+    .album{width:112px;height:112px;flex:0 0 112px;border-radius:18px;background:linear-gradient(135deg,#e8bfc2,#f7e7dc);display:grid;place-items:center;font-size:2.5rem}
+    .music-info{flex:1;min-width:0}
+    .music-info h3{font-size:1.45rem;color:var(--deep);margin:0 0 5px}
+    .music-info p{color:var(--muted);font-size:.82rem;margin:0 0 14px}
+    audio{width:100%;height:36px}
+    .youtube-player{display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:12px;background:#f5e4e3}
+    .music-card .music-info{width:100%}
+    .game-card{max-width:640px;margin:auto;text-align:center}
+    .puzzle{width:min(330px,90vw);aspect-ratio:1;margin:22px auto;display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:white;padding:5px;border-radius:14px;box-shadow:0 8px 24px #865c6217}
+    .tile{border:0;border-radius:7px;background:linear-gradient(135deg,#e7c1c5,#f8e9e3);color:#845d65;font-family:'Playfair Display',serif;font-size:1.4rem;display:grid;place-items:center;overflow:hidden;position:relative}
+    .tile img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+    .tile.empty{background:#fbf4f0;border:1px dashed #e4c6c7}
+    .game-note{color:var(--muted);font-size:.85rem;line-height:1.7}
+    .quiz{max-width:640px;margin:auto}
+    .question{font-family:'Playfair Display',serif;font-size:1.45rem;color:var(--deep);margin:0 0 18px}
+    .answers{display:grid;gap:10px}
+    .answer{border:1px solid var(--line);border-radius:13px;background:#fffaf8;color:var(--ink);padding:13px 16px;text-align:left}
+    .answer:hover{background:#f9e9e8}
+    .answer.correct{border-color:#a9c5a7;background:#eff6ed}
+    .answer.wrong{border-color:#d99aa0;background:#fff0f0}
+    .result{margin-top:15px;color:var(--deep);font-weight:600;min-height:24px}
+    footer{text-align:center;padding:55px 20px 70px;color:var(--muted);font-size:.82rem;line-height:1.9}
+    footer strong{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--deep);font-weight:500}
+    .modal{position:fixed;inset:0;background:#3d2930a8;display:grid;place-items:center;padding:20px;z-index:5}
+    .modal-box{max-width:560px;width:100%;background:var(--cream);padding:14px;border-radius:20px;text-align:center}
+    .modal-box img{max-width:100%;max-height:70vh;object-fit:contain;border-radius:12px}
+    .close{float:right;border:0;background:transparent;color:var(--deep);font-size:1.5rem;padding:4px 10px}
+    @media(max-width:650px){.gallery{grid-template-columns:repeat(2,1fr);gap:10px}.photo img,.placeholder{height:160px}.music-card{align-items:flex-start}.album{width:80px;height:80px;flex-basis:80px}.topline{font-size:.65rem}}
+  </style>
+</head>
+<body>
+  <section class="door-screen" id="doorScreen">
+    <div class="door-card">
+      <div class="eyebrow">A little surprise, made just for you</div>
+      <div class="door" id="doorArt" aria-hidden="true"></div>
+      <h1>Knock, knock…<br><em>it's your day!</em></h1>
+      <p>Someone has prepared a tiny corner of the internet to celebrate you.</p>
+      <button class="primary" id="openDoor">Open the door ♡</button>
+      <div class="tiny">Psst… this is all for you, Adib Mahendra.</div>
+    </div>
+  </section>
+
+  <main id="site" class="hidden">
+    <header>
+      <div class="topline"><span>MADE WITH LOVE</span><span class="brand">a little world for Mas Hendra ♡</span><span>JANUARY 06</span></div>
+      <nav>
+        <a href="#letter">A letter</a><a href="#memories">Memories</a><a href="#music">Our song</a><a href="#puzzle">Puzzle</a><a href="#quiz">Quiz</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">A whole page dedicated to you</div>
+      <div class="sparkle">✧　♡　✧</div>
+      <h1>Happy birthday,<br><em>Adib Mahendra!</em></h1>
+      <p>Another trip around the sun, and another reason for me to feel lucky that this world has you in it. I made you a little something. Take your time and explore. ♡</p>
+      <div class="eyebrow">SCROLL A LITTLE · THERE'S MORE</div>
+    </section>
+
+    <section class="section" id="letter">
+      <div class="section-head"><div class="eyebrow">01 — Something from my heart</div><h2>A letter for you</h2><p>A few things I hope you never forget.</p></div>
+      <div class="paper letter">
+        <h3>Hi, my favorite person.</h3>
+        <p>Happy birthday, Adib Mahendra!
+
+Mas Hendra, i honestly don't know how to put into words how grateful i am to have you in my life, Mas. But, i hope today reminds you of how deeply loved you are, as someone i can look up to, someone whose presence feels like home, and someone i'll always be thankful for.
+
+I hope this new chapter brings you closer to the things you've been dreaming of. I hope it gives you countless reasons to smile, and that it's gentle with you, especially on the days that feel a little heavy, and i hope you always remember that i will always on that every single day.
+
+Thank you for being you. For your kindness, your patience, your silly little moments, and for every quiet way you make ordinary days feel like something special. Thankyou for existing, and somehow becoming the lover my heart chose. I know i'm not constantly everytime expressing my feeling to you, but i'm sure that having you in my life is truly one of the sweetest blessings i'll never take for granted. I'm genuinely so proud of who you are, and of who you're becoming, so you deserve to be proud of yourself too.
+
+If i could wish for just one thing, it would be that life gives back all the goodness you so freely give to the people around you. Please keep chasing the things that make your heart feel alive. I'll be right here, cheering for you, always.
+
+And, selfishly, i hope i get to celebrate many, many more birthdays with you.
+
+I love you, Mas Hendra. Here's to 22, and to everything beautiful that's still waiting for you. ♡</p>
+        <div class="sign">Always yours, Vira ♡</div>
+      </div>
+    </section>
+
+    <section class="section" id="memories">
+      <div class="section-head"><div class="eyebrow">02 — Little pieces of us</div><h2>Our little memories</h2><p>Tap a photo to see it a little closer.</p></div>
+      <div class="gallery" id="gallery">
+        <button class="photo" data-caption="Another DoSnap with FISH!"><div class="placeholder">Add photo 1<br><small>assets/photo-1.jpg</small></div><span>Us with those fish!</span></button>
+        <button class="photo" data-caption="One of my favorites photo!"><div class="placeholder">Add photo 2<br><small>assets/photo-2.jpg</small></div><span>you + me</span></button>
+        <button class="photo" data-caption="More memories with glamping, please"><div class="placeholder">Add photo 3<br><small>assets/photo-3.jpg</small></div><span>the little things</span></button>
+        <button class="photo" data-caption="First time hiking together!"><div class="placeholder">Add photo 4<br><small>assets/photo-4.jpg</small></div><span>Ungaran with you</span></button>
+        <button class="photo" data-caption="Thanks for the sweetest gifts"><div class="placeholder">Add photo 5<br><small>assets/photo-5.jpg</small></div><span>my happiest birthday</span></button>
+        <button class="photo" data-caption="Always choosing you"><div class="placeholder">Add photo 6<br><small>assets/photo-6.jpg</small></div><span>still choosing you ♡</span></button>
+      </div>
+    </section>
+
+    <section class="section" id="music">
+      <div class="section-head"><div class="eyebrow">03 — Press play</div><h2>A song for you</h2><p>Because some feelings are easier to find in a melody.</p></div>
+      <div class="paper music-card">
+        <div class="music-info">
+          <h3>Mudah-Mudahan</h3>
+          <p>Pidi Baiq · A little song for us ♡</p>
+          <iframe
+            class="youtube-player"
+            src="https://www.youtube.com/embed/O7IOTkOHm2I?si=qr-Wqh-MZJjSVpHv"
+            title="Mudah-Mudahan — Pidi Baiq (Official Audio)"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <p class="game-note" style="text-align:center;margin-top:13px">Press play and let this song be part of our little world. ♡</p>
+    </section>
+
+    <section class="section" id="puzzle">
+      <div class="section-head"><div class="eyebrow">04 — A tiny challenge</div><h2>Put us back together</h2><p>Slide the tiles into the empty space to complete the picture.</p></div>
+      <div class="paper game-card">
+        <p class="game-note">This is a 3 × 3 sliding puzzle!.</p>
+        <div class="puzzle" id="puzzleBoard" aria-label="Sliding photo puzzle"></div>
+        <button class="primary" id="shufflePuzzle">Shuffle puzzle ↻</button>
+        <div class="result" id="puzzleResult" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section" id="quiz">
+      <div class="section-head"><div class="eyebrow">05 — Just for fun</div><h2>How well do you know us?</h2><p>Let's see if you remember the little details.</p></div>
+      <div class="paper quiz">
+        <div class="eyebrow" id="quizProgress">QUESTION 1 of 3</div>
+        <p class="question" id="questionText">Where did our story first begin?</p>
+        <div class="answers" id="answers"></div>
+        <div class="result" id="quizResult" aria-live="polite"></div>
+        <button class="primary hidden" id="nextQuestion" style="margin-top:16px">Next question →</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="sparkle">✧　♡　✧</div>
+      <strong>Here's to you, Mas Hendra.</strong><br>
+      May this year be kind to you, and may we fill it with even more little memories.<br>
+      <span style="font-family:'Playfair Display',serif;font-style:italic">Made with all my love. ♡</span>
+    </footer>
+  </main>
+
+  <div class="modal hidden" id="photoModal" role="dialog" aria-modal="true" aria-label="Photo preview">
+    <div class="modal-box"><button class="close" id="closeModal" aria-label="Close">×</button><img id="modalImage" alt="Memory"><p id="modalCaption"></p></div>
+  </div>
+
+  <script>
+    // ===== PERSONALIZE YOUR WEBSITE HERE =====
+    // Add photos named photo-1.jpg through photo-6.jpg inside the assets folder.
+    // Add an MP3 named song.mp3 inside the assets folder.
+    // You can change the quiz questions and answers below.
+    const puzzlePhoto = "assets/Puzzle.jpg";
+    const quizQuestions = [
+      { q: "Where did our story first begin?", a: ["At the beach", "At Pucang Sawit?!?!?", "At a coffee shop"], correct: 1, note: "Is that a first date or what???. ♡" },
+      { q: "Where did you ask me to be yours?", a: ["Balai Kota Surakarta", "A movie theatre", "At campus"], correct: 0, note: "January 11, 2026 — one of my favorite dates. ♡" },
+      { q: "What do I hope for us?", a: ["More adventures together", "More little memories", "All of the above"], correct: 2, note: "Correct answer: all of the above, always. ♡" }
+    ];
+
+    const doorScreen = document.getElementById("doorScreen");
+    const site = document.getElementById("site");
+    document.getElementById("openDoor").addEventListener("click", () => {
+      document.getElementById("doorArt").classList.add("open");
+      setTimeout(() => { doorScreen.classList.add("hidden"); site.classList.remove("hidden"); window.scrollTo(0,0); }, 450);
+    });
+
+    // Load gallery photos if supplied.
+    document.querySelectorAll(".photo").forEach((card, i) => {
+      const src = `assets/photo-${i+1}.jpg`;
+      const img = new Image();
+      img.onload = () => {
+        const placeholder = card.querySelector(".placeholder");
+        if (placeholder) placeholder.remove();
+        const image = document.createElement("img");
+        image.src = src; image.alt = card.dataset.caption || `Memory ${i+1}`;
+        card.prepend(image);
+      };
+      img.src = src;
+      card.addEventListener("click", () => {
+        const image = card.querySelector("img");
+        if (!image) return;
+        document.getElementById("modalImage").src = image.src;
+        document.getElementById("modalCaption").textContent = card.dataset.caption || "";
+        document.getElementById("photoModal").classList.remove("hidden");
+      });
+    });
+    const closeModal = () => document.getElementById("photoModal").classList.add("hidden");
+    document.getElementById("closeModal").addEventListener("click", closeModal);
+    document.getElementById("photoModal").addEventListener("click", e => { if(e.target.id === "photoModal") closeModal(); });
+
+    // Sliding puzzle (uses Puzzle.jpg if available; otherwise a soft illustrated tile set).
+    const board = document.getElementById("puzzleBoard");
+    let tiles = [1,2,3,4,5,6,7,8,0];
+    function drawPuzzle(){
+      board.innerHTML = "";
+      tiles.forEach((n, index) => {
+        const btn = document.createElement("button");
+        btn.className = "tile" + (n === 0 ? " empty" : "");
+        btn.setAttribute("aria-label", n === 0 ? "Empty space" : `Tile ${n}`);
+        if(n){
+          const img = document.createElement("img");
+          img.src = puzzlePhoto;
+          img.alt = "";
+          img.onerror = () => { img.remove(); btn.textContent = ["♡","✿","✧","♡","YOU","&","ME","♡"][n-1]; };
+          img.style.objectPosition = `${((n-1)%3)*50}% ${Math.floor((n-1)/3)*50}%`;
+          // Use a shared image divided into nine cropped sections.
+          img.style.width = "300%"; img.style.height = "300%";
+          img.style.maxWidth = "none"; img.style.maxHeight = "none";
+          img.style.left = `${-((n-1)%3)*100}%`;
+          img.style.top = `${-Math.floor((n-1)/3)*100}%`;
+          btn.appendChild(img);
+        }
+        btn.addEventListener("click", () => moveTile(index));
+        board.appendChild(btn);
+      });
+      if(tiles.every((v,i)=>v===i+1 || (i===8 && v===0))) document.getElementById("puzzleResult").textContent = "You did it! Every piece belongs together. ♡";
+      else document.getElementById("puzzleResult").textContent = "";
+    }
+    function moveTile(index){
+      const empty = tiles.indexOf(0);
+      const adjacent = Math.abs(Math.floor(index/3)-Math.floor(empty/3)) + Math.abs(index%3-empty%3) === 1;
+      if(!adjacent) return;
+      [tiles[index],tiles[empty]]=[tiles[empty],tiles[index]];
+      drawPuzzle();
+    }
+    function shuffle(){
+      tiles=[1,2,3,4,5,6,7,8,0];
+      let prev=-1;
+      for(let i=0;i<100;i++){
+        const empty=tiles.indexOf(0), row=Math.floor(empty/3), col=empty%3;
+        const choices=[empty-3,empty+3,empty-1,empty+1].filter(x=>x>=0&&x<9&&
+          !(x===empty-1&&col===0)&&!(x===empty+1&&col===2)&&x!==prev);
+        const pick=choices[Math.floor(Math.random()*choices.length)];
+        [tiles[empty],tiles[pick]]=[tiles[pick],tiles[empty]]; prev=empty;
+      }
+      document.getElementById("puzzleResult").textContent="";
+      drawPuzzle();
+    }
+    document.getElementById("shufflePuzzle").addEventListener("click",shuffle);
+    drawPuzzle(); shuffle();
+
+    // Quiz
+    let qIndex=0, score=0, answered=false;
+    const questionText=document.getElementById("questionText"), answers=document.getElementById("answers");
+    const quizResult=document.getElementById("quizResult"), next=document.getElementById("nextQuestion");
+    function showQuestion(){
+      answered=false; const q=quizQuestions[qIndex];
+      document.getElementById("quizProgress").textContent=`QUESTION ${qIndex+1} OF ${quizQuestions.length}`;
+      questionText.textContent=q.q; answers.innerHTML=""; quizResult.textContent=""; next.classList.add("hidden");
+      q.a.forEach((answer,i)=>{
+        const b=document.createElement("button"); b.className="answer"; b.textContent=answer;
+        b.addEventListener("click",()=>{
+          if(answered)return; answered=true;
+          [...answers.children].forEach((el,j)=>{el.disabled=true;if(j===q.correct)el.classList.add("correct");});
+          if(i===q.correct){score++;quizResult.textContent="You got it! ♡ "+q.note;}
+          else{b.classList.add("wrong");quizResult.textContent="Not quite! "+q.note;}
+          next.classList.remove("hidden");
+          next.textContent=qIndex===quizQuestions.length-1?"See my message ♡":"Next question →";
+        });
+        answers.appendChild(b);
+      });
+    }
+    next.addEventListener("click",()=>{
+      qIndex++;
+      if(qIndex<quizQuestions.length) showQuestion();
+      else{
+        document.getElementById("quizProgress").textContent="THAT'S A WRAP";
+        questionText.textContent=`You got ${score} out of ${quizQuestions.length}!`;
+        answers.innerHTML="";
+        quizResult.textContent="No matter the score, you're my favorite person to make memories with. Happy birthday, love. ♡";
+        next.classList.add("hidden");
+      }
+    });
+    showQuestion();
+  </script>
+</body>
+</html>

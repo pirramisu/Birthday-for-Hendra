@@ -1,0 +1,1 @@
+Put photo-1.jpg through photo-6.jpg and song.mp3 in this folder. See ../README.md for details.
